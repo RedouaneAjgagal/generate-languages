@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+p,
+button {
+  color: #3d3d3d;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  letter-spacing: .13rem;
+  font-weight: 600;
+  background-color: #efffe2;
+  transition: .2s ease-in-out;
+  box-shadow: 0 .1rem 1rem #addb88;
+}
+
+button:hover {
+  background-color: #e2ffc9;
+}
+
+body {
+  background-color: #bdff87;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.App {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* ------------- Side Bar --------------- */
+aside {
+  background-color: #a8ff60;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  max-width: 100%;
+  width: 30rem;
+  padding: 3rem 1.5rem;
+  box-shadow: .1rem 0 1rem #95e455;
+}
+
+aside form {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+}
+
+aside form input {
+  border: none;
+  padding: 1rem;
+  outline: none;
+  border-radius: 10rem;
+  width: 100%;
+  font-size: .9rem;
+}
+
+aside form button {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  max-width: 6rem;
+  border-radius: 10rem;
+  background-color: #3d3d3d;
+  color: #fff;
+}
+
+aside form button:hover {
+  background-color: #2c2c2c;
+}
+
+aside ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+aside ul li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #bdff87;
+  padding: .6rem 1.2rem;
+  border-radius: 10rem;
+  box-shadow: 0 .1rem .3rem #95e455;
+}
+
+aside ul li button {
+  padding: .6rem 1.2rem;
+  border-radius: 10rem;
+  background-color: #efffe2;
+  font-weight: 600;
+  transition: .2s ease-in-out;
+}
+
+aside ul li button:hover {
+  background-color: #e2ffc9;
+}
+
+/* ------------- MAIN --------------- */
+main {
+  display: grid;
+  place-content: center;
+  place-items: center;
+  width: 100%;
+  gap: 2.5rem;
+  position: relative;
+}
+
+main h2 {
+  font-size: 3rem;
+}
+
+.slide-in-bck-bottom {
+  animation: slide-in-bck-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-in-bck-bottom {
+  0% {
+    transform: translateZ(300px) translateY(-100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+
+main button {
+  padding: 1rem;
+  border-radius: 10rem;
+  background-color: #efffe2;
+}
+
+main p {
+  position: absolute;
+  right: 2rem;
+  bottom: 1.5rem;
+}
