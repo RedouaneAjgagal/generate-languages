@@ -148,3 +148,23 @@ main p {
   right: 2rem;
   bottom: 1.5rem;
 }
+
+@media (max-width: 768px) {
+  .App {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    gap: 5rem;
+    padding-top: 7rem;
+    position: relative;
+  }
+  .App main {
+    position: static;
+  }
+  .App main p {
+    right: auto;
+    bottom: .7rem;
+  }
+}
